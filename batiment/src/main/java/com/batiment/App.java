@@ -10,6 +10,19 @@ import com.batiment.entities.Piece;
 public class App {
     public static void main(String[] args) {
         Batiment maison = new Batiment("5 Runglas 29400 St-Servais", 9);
+        // Pour bien prendre en compte la composition stricte, les pièces n'ont pas à exister
+        // dans le programme principal.
+        // Tu peux faire
+        // maison.addPiece(new Piece(3, 2, 4, "cuisine", 3))
+        // C'est vrai que ça complique un peu pour remplir les pièces mais ca correspond
+        // mieux à la composition
+        // Tu peux également faire : 
+        // public void ajouterPiece(double l, double L, double h, String nom, int nbFenetre) {
+        //  this.pieces.add(new Piece(l, L, h, nom, nbFenetre));
+        // }
+        // Sinon, tes entités sont "nickel" !
+        // ✅ checked
+}
 
         Piece cuisine = new Piece(3, 2, 4, "cuisine", 3);
         Piece toiletes = new Piece(1, 2, 2, "toiletes", 1);
@@ -70,5 +83,4 @@ public class App {
             System.out.println("-------------------");
         }
 
-    }
-}
+    }}
