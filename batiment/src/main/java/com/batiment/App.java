@@ -18,9 +18,8 @@ public class App {
         // C'est vrai que ça complique un peu pour remplir les pièces mais ca correspond
         // mieux à la composition
         // Tu peux également faire :
-        // public void ajouterPiece(double l, double L, double h, String nom, int
-        // nbFenetre) {
-        // this.pieces.add(new Piece(l, L, h, nom, nbFenetre));
+        // public void ajouterPiece(double l, double L, double h, String nom) {
+        // this.pieces.add(new Piece(l, L, h, nom));
         // }
         // Sinon, tes entités sont "nickel" !
         // ✅ checked
