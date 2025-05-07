@@ -8,6 +8,11 @@ public class Batiment {
     private int nombrePiecesMax;
     private List<Piece> tabPieces = new ArrayList<>();
 
+    public Batiment(String adresse, int nombrePiecesMax) {
+        this.setAdresse(adresse);
+        this.setNombrePiecesMax(nombrePiecesMax);
+    }
+
     public String getAdresse() {
         return adresse;
     }
